@@ -46,3 +46,20 @@ section {
   font-size: 36px;
 }
 
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+
+  #numbers-container {
+    flex-direction: column;
+  }
+
+  .number-box {
+    width: 100%;
+  }
+
+  
+
+ 
+}
