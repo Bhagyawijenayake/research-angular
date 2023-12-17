@@ -1,0 +1,17 @@
+<section>
+
+  <div id="numbers-container" *ngIf="numbersData.length; else loading">
+    <div *ngFor="let number of numbersData" class="number-box">
+      <div class="number-fact">
+        <p>{{ number[1] }}</p>
+      </div>
+      <div class="number">
+        {{ number[0] }}
+      </div>
+    </div>
+  </div>
+  <ng-template #loading>
+    <p>Loading...</p>
+  </ng-template>
+
+</section>

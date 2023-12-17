@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    color: #fff;
+    width: 80%;
+    margin: auto;
+  }
+  
+ 
+  p a {
+    color: #ffffff; /* Set the text color to a blue shade (you can adjust this color) */
+    text-decoration: none; /* Remove underline */
+  
+    font-weight: bold;
+  }
+  
+  p a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
