@@ -25,3 +25,23 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+
+# Research Angular Application
+
+This is a Dockerized Angular application. Follow the instructions below to build and run the Docker image.
+
+## Prerequisites
+
+- Docker: You need to have Docker installed on your machine. You can download Docker from the [official Docker website](https://www.docker.com/products/docker-desktop).
+
+## Building the Docker Image
+
+To build the Docker image, navigate to the project directory in your terminal and run the following command:
+
+```bash
+docker build -t research-angular .
+
+docker run -p 8080:80 research-angular
