@@ -1,5 +1,5 @@
 # Stage 1: Build Angular app
-FROM node:lts-alpine as builder
+FROM node:20-alpine as builder
 
 # Create app directory
 WORKDIR /app
@@ -15,7 +15,7 @@ COPY . .
 RUN npm run build 
 
 # Stage 2: Serve Angular app using Nginx
-FROM nginx:alpine
+FROM nginx:1.25-alpine
 
 # Copy the built Angular app from the previous stage
 COPY --from=builder /app/dist/research-angular /usr/share/nginx/html

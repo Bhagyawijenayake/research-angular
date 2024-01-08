@@ -42,6 +42,8 @@ This is a Dockerized Angular application. Follow the instructions below to build
 To build the Docker image, navigate to the project directory in your terminal and run the following command:
 
 ```bash
-docker build -t research-angular .
+docker build -t research-angular:nginx .
 
 docker run -p 8080:80 research-angular
+
+docker run --name angular-app -d -p 8082:80 research-angular:nginx
